@@ -1,0 +1,42 @@
+{
+  "name": "same_code_base",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "echo please specify which app you want to run",
+    "android:red": "./setup-red.sh && react-native run-android --appId com.same_code_base.red",
+    "android:blue": "./setup-blue.sh && react-native run-android --appId com.same_code_base.blue",
+    "ios": "echo please specify which app you want to run",
+    "ios:red": "./setup-red.sh && react-native run-ios --scheme red-run",
+    "ios:blue": "./setup-blue.sh && react-native run-ios --scheme blue-run",
+    "lint": "eslint .",
+    "start:red": "./setup-red.sh && react-native start",
+    "start:blue": "./setup-blue.sh && react-native start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-native": "0.72.4",
+    "react-native-config": "^1.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@babel/preset-env": "^7.20.0",
+    "@babel/runtime": "^7.20.0",
+    "@react-native/eslint-config": "^0.72.2",
+    "@react-native/metro-config": "^0.72.11",
+    "@tsconfig/react-native": "^3.0.0",
+    "@types/react": "^18.0.24",
+    "@types/react-test-renderer": "^18.0.0",
+    "babel-jest": "^29.2.1",
+    "eslint": "^8.19.0",
+    "jest": "^29.2.1",
+    "metro-react-native-babel-preset": "0.76.8",
+    "prettier": "^2.4.1",
+    "react-test-renderer": "18.2.0",
+    "typescript": "4.8.4"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
